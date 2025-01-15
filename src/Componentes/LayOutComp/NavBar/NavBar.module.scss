@@ -1,0 +1,91 @@
+.navbar {
+  position: sticky;
+  z-index: 200;
+  background-color: #ebedee !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar:hover {
+  background-color: #e0e0e0;
+}
+
+.logo {
+  width: 100px;
+  height: 70px;
+}
+
+.brand {
+  font-weight: bold;
+  color: rgb(58, 130, 130);
+}
+
+.brand:hover {
+  color: rgb(58, 130, 130);
+}
+
+.icon {
+  margin: 0 10px;
+  color: #495057;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+.iconSize {
+  width: 50px;
+  height: 50px;
+}
+
+.authButtons {
+  display: flex;
+}
+
+.authButton {
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.authButton:hover {
+  background-color: #e2e6ea;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  margin: 0 15px;
+  color: rgb(58, 130, 130);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: rgb(136, 134, 134) !important;
+}
+
+.link::after {
+  text-align: center;
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #03b34f;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+
+.link:hover::after {
+  width: 100%;
+}

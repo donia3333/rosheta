@@ -1,0 +1,37 @@
+*{font-family: 'Times New Roman', Times, serif;}
+.container {
+    margin-top: 50px;
+    
+  }
+.main
+{
+    background-color: #f3f4f6;
+    padding: 20px;
+}
+.card {
+    height: 480px; 
+}
+.images{
+    height:250px;
+    object-fit: cover;
+}
+.div3{
+    background-color: #eaebec; 
+    width: 90%;
+    padding: 15px;
+    margin: 5px 5;
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+}
+h4{
+    color: rgb(6, 86, 86);
+    padding:10px;
+}
+.text{
+    font-size: 30px;
+    color: rgb(6, 86, 86);
+}
+h2{
+    text-align: start;
+    color: rgb(6, 86, 86);
+}

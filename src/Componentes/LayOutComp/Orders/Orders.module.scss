@@ -1,0 +1,203 @@
+.container {
+    margin-top: 20px;
+}
+
+.loadingContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+
+    &:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+    }
+}
+
+.completedCard {
+    border-left: 4px solid rgb(13, 102, 86); 
+}
+
+.card {
+    border-left: 4px solid #dc3545; 
+}
+.name
+{
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.name::after
+  {
+    text-align: center;
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 1px;
+    width: 100px;
+    transition: all 0.5s;
+    background-color: #555454;
+    
+  }
+  .name:hover::after
+  {
+    width: 400px;
+  }
+.pendingBadge {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px; 
+    font-size: smaller;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cardTitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(13, 102, 86); 
+}
+
+.cardBody {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.cardButton {
+    width: 100%;
+    background-color: rgb(13, 102, 86); 
+    border: none;
+    font-size: 1rem;
+    color: white;
+
+    &:hover {
+        background-color: darken(rgb(13, 102, 86), 10%);
+    }
+}
+
+.modal {
+    .modal-header {
+        background-color: rgb(13, 102, 86); 
+        color: white;
+        border: none;
+    }
+
+    .modal-footer {
+        border: none;
+    }
+}
+
+.modalBody {
+    max-height: 60vh;
+    overflow-y: auto;
+    color: #333;
+}
+
+.modalOrderId {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modalTitle {
+    font-weight: bold;
+    color: rgb(13, 102, 86);
+}
+
+.loader {
+    font-size: 1.5rem;
+    color: rgb(13, 102, 86); // Green theme for loader
+}
+
+.error {
+    color: #dc3545; // Red for error messages
+}
+
+.completedStatus {
+    background-color: #2b6f8c !important; // Blue for completed
+}
+
+.pendingStatus {
+    background-color: #dc3545 !important; // Red for pending
+}
+
+.noOrder{
+    width: 100%; 
+    height: 600px; 
+}
+
+.browseProductsButton {
+    background-color: rgb(7, 124, 124); 
+    color: white; 
+    border: none; 
+    width: 300px;
+    border-radius: 5px; 
+    margin-bottom: 30px;
+    padding: 10px 20px; 
+    font-size: large; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+
+    &:hover {
+        background-color: rgb(7, 130, 130); 
+        transform: translateY(-2px); 
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//////////
+/// 
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.pending {
+    background-color: rgb(249, 171, 17); // Yellow
+}
+
+.completed {
+    background-color: rgb(13, 102, 86); // Green
+}
+
+.canceled {
+    background-color: rgb(217, 38, 38); // Red
+}
+
+.failed {
+    background-color: rgb(217, 38, 38); // Red
+}

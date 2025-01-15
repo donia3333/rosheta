@@ -1,0 +1,35 @@
+  .welcomeMessage {
+    text-align: center;
+    margin-left: 30px;
+    color: #22579d;
+    
+  }
+  .searchContainer {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7; 
+    border-radius: 25px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+  }
+  
+  .searchInput {
+    border: none; 
+    outline: none; 
+    padding: 10px; 
+    font-size: 16px; 
+    flex: 1; 
+    border-radius: 25px; 
+  }
+  
+  .searchIcon {
+    width: 25px;
+    height: 20px;
+    color: #007bff;
+    margin-left: 10px;
+    cursor: pointer; 
+  }
+  

@@ -1,0 +1,26 @@
+.container{
+   height:auto;
+   
+}
+
+.div1{
+    height:800px;
+    background-color: white;
+    position: relative
+}
+
+.div2{
+    height:auto;
+    background-color: #f3f4f8;
+    z-index: 500;
+    
+}
+.side
+{
+
+    position: fixed; 
+    position: absolute ;
+    top: 20px;
+    bottom: 0;
+    width: 100%;
+}
